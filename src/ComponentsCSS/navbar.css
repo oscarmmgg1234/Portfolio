@@ -13,13 +13,21 @@
     font-family: Copperplate;
     color: aquamarine;
 }
-.NavItemName{
+#NavItemName{
     color: white;
 
 
 }
+#NavItemName:hover{
+    animation-name: navButtons;
+    animation-duration: 750ms;
+}
 
-.NavItemName1{
+#NavItemName1{
 margin-left: 30px;
     color: white;
+}
+#NavItemName1:hover{
+    animation-name: navButtons;
+    animation-duration: 750ms;
 }

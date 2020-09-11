@@ -12,16 +12,16 @@ export default class NAVBAR extends React.Component {
            <Navbar bg={"dark"} expand={"md"} className={"navContainer"} >
                <div className={"navNameBrand"}>OscarLand</div>
                <Nav className={"mr-auto"} >
-                <Nav.Link className={"NavItemName1"} onClick={()=>{alert("oscar")}}>
+                <Nav.Link id={"NavItemName1"}  onClick={()=>{alert("oscar")}}>
                     Home
                 </Nav.Link>
-                   <Nav.Link className={"NavItemName"}>
+                   <Nav.Link id={"NavItemName"}>
                        About
                    </Nav.Link>
-                   <Nav.Link className={"NavItemName"}>
+                   <Nav.Link id={"NavItemName"}>
                        Portfolio
                    </Nav.Link>
-                   <Nav.Link className={"NavItemName"}>
+                   <Nav.Link id={"NavItemName"}>
                        Contact
                    </Nav.Link>
 
