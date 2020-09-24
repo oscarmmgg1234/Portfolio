@@ -5,14 +5,24 @@ import '../ComponentsCSS/navbar.css';
 
 export default class NAVBAR extends React.Component {
 
+    constructor(props) {
+
+        super(props);
+
+    }
+
+
     render(){
+let navbar = JSON.stringify(this.props.nav);
    return (
 
 <div>
            <Navbar bg={"dark"} expand={"md"} className={"navContainer"} >
-               <div className={"navNameBrand"}>OscarLand</div>
+               <div className={"navNameBrand"}>{JSON.parse(navbar)}</div>
+
+
                <Nav className={"mr-auto"} >
-                <Nav.Link id={"NavItemName1"}  onClick={()=>{alert("oscar")}}>
+                <Nav.Link id={"NavItemName1"} >
                     Home
                 </Nav.Link>
                    <Nav.Link id={"NavItemName"}>

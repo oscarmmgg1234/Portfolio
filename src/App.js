@@ -8,11 +8,13 @@ import Portfolio from "./Components/portfolio";
 
 import './App.css';
 
+
+
 function App() {
   return (
       <>
           <div className={"app"}>
-              <NAVBAR/>
+              <NAVBAR nav={"OscarLand"}/>
               <Home/>
               <About/>
               <Portfolio/>
