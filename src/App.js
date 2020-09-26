@@ -11,11 +11,12 @@ import './App.css';
 
 
 function App() {
+    const [toggle,setToggle] = React.useState(false);
   return (
       <>
           <div className={"app"}>
-              <NAVBAR nav={"OscarLand"}/>
-              <Home/>
+              <NAVBAR nav={"OscarLand"} onToggle={()=>setToggle(!toggle)}/>
+              <Home toggled={toggle} onClicked={()=>setToggle(!toggle)}/>
               <About/>
               <Portfolio/>
               <Contact/>

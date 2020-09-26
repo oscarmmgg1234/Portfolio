@@ -6,24 +6,32 @@ import {Sidebar,Menu,Icon} from "semantic-ui-react";
 
 export default class Home extends React.Component {
     render(){
+
         return (<>
                 <Sidebar
                     as={Menu}
+                    animation={'overlay'}
 
                     direction={'right'}
                     icon='labeled'
                     inverted
                     vertical
-                    visible={true}
-                    width='thin'
+                    visible={this.props.toggled}
+                    width={'wide'}
+                    style={{transition: "1s"}}
+
+
                 >
+                    <Menu.Item>
+                        <button onClick={this.props.onClicked}><Icon name={'remove'} /></button>
+                    </Menu.Item>
                     <Menu.Item as='a'>
-                        <Icon name='home' />
+                        <Icon name='home'  />
                         Home
                     </Menu.Item>
                     <Menu.Item as='a'>
-                        <Icon name='gamepad' />
-                        Games
+                        <Icon name='address book' />
+                        About
                     </Menu.Item>
                     <Menu.Item as='a'>
                         <Icon name='camera' />

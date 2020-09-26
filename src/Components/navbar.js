@@ -38,7 +38,14 @@ let navbar = JSON.stringify(this.props.nav);
 
 
                </Nav>
+               <button className={"DrawerContainer"} onClick={this.props.onToggle}>
+                   <div className={"line"} />
+                   <div className={"line"}/>
+                   <div className={"line"}/>
+
+               </button>
            </Navbar>
+
 </div>
 
 
