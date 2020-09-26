@@ -2,3 +2,22 @@
     background-color: gray;
     height:30%;
 }
+.exitButton{
+    background-color: rgba(12,12,12,1) ;
+    border-color: rgba(12,12,12,0);
+    height: 50px;
+    width: 80px;
+    align-items: center;
+
+    justify-content: center;
+
+}
+.exitButton:hover{
+    color: deeppink;
+    transition-duration: 700ms;
+}
+.removeIcon{
+    color: inherit;
+
+}
+

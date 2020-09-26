@@ -15,7 +15,7 @@ function App() {
   return (
       <>
           <div className={"app"}>
-              <NAVBAR nav={"OscarLand"} onToggle={()=>setToggle(!toggle)}/>
+              <NAVBAR nav={"OscarLand"} onToggle={()=>setToggle(!toggle)} />
               <Home toggled={toggle} onClicked={()=>setToggle(!toggle)}/>
               <About/>
               <Portfolio/>

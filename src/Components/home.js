@@ -10,20 +10,21 @@ export default class Home extends React.Component {
         return (<>
                 <Sidebar
                     as={Menu}
-                    animation={'overlay'}
+                    animation='overlay'
 
                     direction={'right'}
                     icon='labeled'
                     inverted
                     vertical
                     visible={this.props.toggled}
-                    width={'wide'}
+                    width={'thin'}
                     style={{transition: "1s"}}
 
 
                 >
-                    <Menu.Item>
-                        <button onClick={this.props.onClicked}><Icon name={'remove'} /></button>
+                    <Menu.Item as='a' onClick={this.props.onClicked}>
+                        <Icon name={'remove'} size='large'/> Close
+
                     </Menu.Item>
                     <Menu.Item as='a'>
                         <Icon name='home'  />
@@ -34,8 +35,12 @@ export default class Home extends React.Component {
                         About
                     </Menu.Item>
                     <Menu.Item as='a'>
-                        <Icon name='camera' />
-                        Channels
+                        <Icon name='briefcase' />
+                        Portfolio
+                    </Menu.Item>
+                    <Menu.Item as='a'>
+                        <Icon name='phone' />
+                        Contact
                     </Menu.Item>
                 </Sidebar>
 <div className={"homeContainer"}>

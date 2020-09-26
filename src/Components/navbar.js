@@ -16,8 +16,8 @@ export default class NAVBAR extends React.Component {
 let navbar = JSON.stringify(this.props.nav);
    return (
 
-<div>
-           <Navbar bg={"dark"} expand={"md"} className={"navContainer"} >
+<div className={'navDiv'}>
+           <Navbar  expand={"md"} id={"navContainer"} >
                <div className={"navNameBrand"}>{JSON.parse(navbar)}</div>
 
 
