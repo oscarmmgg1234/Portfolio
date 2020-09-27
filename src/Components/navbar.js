@@ -1,6 +1,7 @@
 import React from 'react';
 import {Navbar,Nav,NavbarBrand} from 'react-bootstrap';
 import '../ComponentsCSS/navbar.css';
+import {Link} from 'react-scroll'
 
 
 export default class NAVBAR extends React.Component {
@@ -17,21 +18,22 @@ let navbar = JSON.stringify(this.props.nav);
    return (
 
 <div className={'navDiv'}>
+
            <Navbar  expand={"md"} id={"navContainer"} >
                <div className={"navNameBrand"}>{JSON.parse(navbar)}</div>
 
 
                <Nav className={"mr-auto"} >
-                <Nav.Link id={"NavItemName1"} >
+                <Nav.Link id={"NavItemName1"} href={"#home"} >
                     Home
                 </Nav.Link>
-                   <Nav.Link id={"NavItemName"}>
+                   <Nav.Link id={"NavItemName"} href={"#about"}>
                        About
                    </Nav.Link>
-                   <Nav.Link id={"NavItemName"}>
+                   <Nav.Link id={"NavItemName"} href={"#port"}>
                        Portfolio
                    </Nav.Link>
-                   <Nav.Link id={"NavItemName"}>
+                   <Nav.Link id={"NavItemName"} href={"#contact"}>
                        Contact
                    </Nav.Link>
 

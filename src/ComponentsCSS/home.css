@@ -1,6 +1,7 @@
 .homeContainer{
     background-color: gray;
-    height:30%;
+    height:100vh;
+
 }
 .exitButton{
     background-color: rgba(12,12,12,1) ;
