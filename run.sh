@@ -1,8 +1,9 @@
-#!/usr/bin/env bash
+#!/usr/bin/bash
 
 #gives permision to run this script
 chmod +x runr.sh
 
+#Input for commit title 
 read -p 'Commit Message: ' COMMIT
 
 #git commit 
@@ -16,4 +17,4 @@ npm run build
 #firebase deploy
 firebase deploy --only hosting
 
-echo 'Script Done Boiii!'
+echo 'Script Done Boiii'
