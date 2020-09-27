@@ -2,8 +2,17 @@
     height: 1500px;
     scroll-behavior: smooth;
     overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+
+
+
+
 
 }
 .sections{
+    height: 100vh;
+    width: 100%;
     scroll-behavior: smooth;
+    scroll-snap-align: start;
+
 }
