@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/usr/bin/env bash
 
 #gives permision to run this script
 chmod +x runr.sh
