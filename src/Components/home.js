@@ -8,6 +8,7 @@ export default class Home extends React.Component {
     render(){
 
         return (<>
+
                 <Sidebar
                     as={Menu}
                     animation='overlay'
@@ -45,7 +46,7 @@ export default class Home extends React.Component {
                 </Sidebar>
 <div className={"homeContainer"}>
 
-
+<img src={require('../ASSETS/IMAGES/jason-leung-Xaanw0s0pMk-unsplash.jpg')} className={'HomeImage'}/>
 <h1>Welcome to my web Portfolio(in progress)</h1>
     <p>Scroll down to look around</p>
 
