@@ -46,7 +46,7 @@ export default class Home extends React.Component {
                 </Sidebar>
 <div className={"homeContainer"}>
 
-<img src={require('../ASSETS/IMAGES/jason-leung-Xaanw0s0pMk-unsplash.jpg')} className={'HomeImage'}/>
+<img src={require('../ASSETS/IMAGES/AdobeStock_233309267_Preview.jpeg')} className={'HomeImage'}/>
 <h1>Welcome to my web Portfolio(in progress)</h1>
     <p>Scroll down to look around</p>
 
