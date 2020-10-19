@@ -2,7 +2,11 @@
     font-family: Sci-Fi;
     src: url("../ASSETS/Fonts/VanBerger_Stencil.otf");
 }
+@font-face {
+    font-family: techLight;
+    src: url("../ASSETS/Fonts/orbitron-light.otf");
 
+}
 
 #navContainer{
     height: 50px;
@@ -30,6 +34,7 @@ transition-duration: 500ms;
 #NavItemName{
     color: white;
     scroll-behavior: smooth;
+    font-family: techLight;
 
 
 }
@@ -41,6 +46,7 @@ transition-duration: 500ms;
 #NavItemName1{
 margin-left: 30px;
     color: white;
+    font-family: techLight;
 }
 #NavItemName1:hover{
     animation-name: navButtons;
