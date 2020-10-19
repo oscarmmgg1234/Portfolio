@@ -27,19 +27,19 @@ export default class Home extends React.Component {
                         <Icon name={'remove'} size='large'/> Close
 
                     </Menu.Item>
-                    <Menu.Item as='a' href={"#home"}>
+                    <Menu.Item as='a' href={"#home"} onClick={this.props.onClicked}>
                         <Icon name='home'  />
                         Home
                     </Menu.Item>
-                    <Menu.Item as='a' href={"#about"}>
+                    <Menu.Item as='a' href={"#about"}  onClick={this.props.onClicked}>
                         <Icon name='address book' />
                         About
                     </Menu.Item>
-                    <Menu.Item as='a' href={"#port"}>
+                    <Menu.Item as='a' href={"#port"} onClick={this.props.onClicked}>
                         <Icon name='briefcase' />
                         Portfolio
                     </Menu.Item>
-                    <Menu.Item as='a' href={"#contact"}>
+                    <Menu.Item as='a' href={"#contact"} onClick={this.props.onClicked}>
                         <Icon name='phone' />
                         Contact
                     </Menu.Item>
