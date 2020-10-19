@@ -25,6 +25,15 @@
     from {color: white}
     to {color: deeppink}
 }
+@keyframes sideBtn {
+    to {height: inherit;width: inherit;}
+    from {height: 0px;width: 0px;}
+}
+@keyframes sideBtnGlowUp {
+    from {height: inherit;width: inherit;}
+    to {height: 0;width: 0;display: none;
+    }
+}
 .navNameBrand{
 transition-duration: 500ms;
     font-size: 35px;
@@ -50,7 +59,7 @@ margin-left: 30px;
 }
 #NavItemName1:hover{
     animation-name: navButtons;
-    animation-duration: 750ms;
+    animation-duration: 1s;
 }
 .DrawerContainer{
     height: 34px;
@@ -64,15 +73,17 @@ margin-left: 30px;
     border-width: 1px;
     border-color: #353535;
     border-style: solid;
-    display: flex;
+
     display: none;
+
+
 
 }
 .line{
     width: 25px;
     background-color: white;
     height: 3px;
-    display: flex;
+
     display: none;
 }
 @media only screen and (max-width: 800px){
@@ -91,5 +102,13 @@ margin-left: 30px;
     }
     .DrawerContainer{
         display: flex;
+        animation-name: sideBtn;
+        animation-duration: 1s;
+
+
     }
+
+
 }
+
+
