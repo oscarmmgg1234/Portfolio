@@ -55,8 +55,11 @@ export default class Home extends React.Component {
     Im Oscar,
     </div>
         <div className={'WelcomeEnd'}>
-        a software engineer
+        a
         </div>
+    <div className={'WelcomeTitle'}>
+        Software Engineer
+    </div>
 </div>
 
 
