@@ -10,13 +10,54 @@
 
 
 }
-.HomeImage{
+.Homediv{
     width: 100%;
-    display: inherit;
+    height: 100vh;
     position: relative;
-    
+}
+.HomeImage{
+    width: inherit;
+    display: inherit;
+    position: absolute;
+    height: 100vh;
 
 }
+.WelcomeHeader{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    color: white;
+    font-family: techMed;
+    transform: translate(-50%, -50%);
+    font-size: 47px;
+    z-index: 100;
+
+
+
+
+}
+.WelcomeText{
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    color: white;
+    font-family: techMed;
+    transform: translate(-50%, -50%);
+    font-size: 47px;
+    z-index: 100;
+}
+.WelcomeEnd{
+    position: absolute;
+    top: 49%;
+    left: 50%;
+    color: white;
+    font-family: techMed;
+    transform: translate(-50%, -50%);
+    font-size: 47px;
+    z-index: 100;
+}
+
+
 
 
 .exitButton{

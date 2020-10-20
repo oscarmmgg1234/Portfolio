@@ -45,10 +45,19 @@ export default class Home extends React.Component {
                     </Menu.Item>
                 </Sidebar>
 
+<div className={'Homediv'}>
+<img src={require('../ASSETS/IMAGES/darker2.png')} className={'HomeImage'}/>
+<div className={'WelcomeHeader'}>
+    Hey,
 
-<img src={require('../ASSETS/IMAGES/jason-leung-Xaanw0s0pMk-unsplash.jpg')} className={'HomeImage'}/>
-
-
+</div>
+    <div className={'WelcomeText'}>
+    Im Oscar,
+    </div>
+        <div className={'WelcomeEnd'}>
+        a software engineer
+        </div>
+</div>
 
 
         </>
