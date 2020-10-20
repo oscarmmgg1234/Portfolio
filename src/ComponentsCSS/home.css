@@ -79,4 +79,40 @@
 
 }
 
+@media only screen and (max-width: 1070px)
+{
+    .WelcomeHeader{
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        color: white;
+        font-family: techMed;
+        transform: translate(-50%, -50%);
+        font-size: 24px;
+        z-index: 100;
 
+
+
+
+    }
+    .WelcomeText{
+        position: absolute;
+        top: 42%;
+        left: 50%;
+        color: white;
+        font-family: techMed;
+        transform: translate(-50%, -50%);
+        font-size: 24px;
+        z-index: 100;
+    }
+    .WelcomeEnd{
+        position: absolute;
+        top: 49%;
+        left: 50%;
+        color: white;
+        font-family: techMed;
+        transform: translate(-50%, -50%);
+        font-size: 24px;
+        z-index: 100;
+    }
+}
