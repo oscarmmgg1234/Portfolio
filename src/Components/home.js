@@ -46,17 +46,14 @@ export default class Home extends React.Component {
                 </Sidebar>
 
 
-<img src={require('../ASSETS/IMAGES/AdobeStock_233309267_Preview.jpeg')} className={'HomeImage'}/>
-<<<<<<< HEAD
+<img src={require('../ASSETS/IMAGES/jason-leung-Xaanw0s0pMk-unsplash.jpg')} className={'HomeImage'}/>
 
 
-</div>
+
 
         </>
-=======
 
-</>
->>>>>>> d4820570b6ce6e01145cfd8342ed493d023a4153
+
 )
 }
 }
