@@ -97,7 +97,7 @@
         color: white;
         font-family: techMed;
         transform: translate(-50%, -50%);
-        font-size: 40px;
+        font-size: 30px;
         z-index: 100;
 
 
@@ -111,7 +111,7 @@
         color: white;
         font-family: techMed;
         transform: translate(-50%, -50%);
-        font-size: 40px;
+        font-size: 30px;
         z-index: 100;
 
     }
@@ -144,7 +144,7 @@
         color: white;
         font-family: techMed;
         transform: translate(-50%, -50%);
-        font-size: 40px;
+        font-size: 30px;
         z-index: 100;
     }
     .welcomeM2{
@@ -154,7 +154,7 @@
         color: white;
         font-family: techMed;
         transform: translate(-50%, -50%);
-        font-size: 40px;
+        font-size: 30px;
         z-index: 100;
     }
 }
