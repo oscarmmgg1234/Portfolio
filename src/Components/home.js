@@ -57,7 +57,8 @@ export default class Home extends React.Component {
         <div className={'WelcomeEnd'}>
         a
         </div>
-    <div className={'welcomeM1'}> a SoftWare</div>
+    <div className={'welcomeM0'}>@</div>
+    <div className={'welcomeM1'}>SoftWare</div>
     <div className={'WelcomeTitle'}>
         Software Engineer
     </div>
