@@ -97,7 +97,7 @@
         color: white;
         font-family: techMed;
         transform: translate(-50%, -50%);
-        font-size: 20px;
+        font-size: 40px;
         z-index: 100;
 
 
@@ -111,8 +111,9 @@
         color: white;
         font-family: techMed;
         transform: translate(-50%, -50%);
-        font-size: 20px;
+        font-size: 40px;
         z-index: 100;
+
     }
     .WelcomeEnd{
         position: absolute;
@@ -121,8 +122,9 @@
         color: white;
         font-family: techMed;
         transform: translate(-50%, -50%);
-        font-size: 24px;
+        font-size: 26px;
         z-index: 100;
+        display: none;
     }
     .WelcomeTitle{
         position: absolute;
@@ -131,7 +133,28 @@
         color: white;
         font-family: techMed;
         transform: translate(-50%, -50%);
-        font-size: 18px;
+        font-size: 40px;
+        z-index: 100;
+        display: none;
+    }
+    .welcomeM1{
+        position: absolute;
+        top: 49%;
+        left: 50%;
+        color: white;
+        font-family: techMed;
+        transform: translate(-50%, -50%);
+        font-size: 40px;
+        z-index: 100;
+    }
+    .welcomeM2{
+        position: absolute;
+        top: 56%;
+        left: 50%;
+        color: white;
+        font-family: techMed;
+        transform: translate(-50%, -50%);
+        font-size: 40px;
         z-index: 100;
     }
 }

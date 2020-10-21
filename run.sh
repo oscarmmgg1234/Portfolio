@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 #gives permision to run this script
-chmod +x runr.sh
+
 
 #Input for commit title 
 read -p 'Commit Message: ' COMMIT
