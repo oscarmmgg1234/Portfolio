@@ -92,7 +92,7 @@
 {
     .WelcomeHeader{
         position: absolute;
-        top: 35%;
+        top: 28%;
         left: 50%;
         color: white;
         font-family: techMed;
@@ -106,7 +106,7 @@
     }
     .WelcomeText{
         position: absolute;
-        top: 42%;
+        top: 35%;
         left: 50%;
         color: white;
         font-family: techMed;
@@ -139,7 +139,7 @@
     }
     .welcomeM1{
         position: absolute;
-        top: 56%;
+        top: 49%;
         left: 50%;
         color: white;
         font-family: techMed;
@@ -149,7 +149,7 @@
     }
     .welcomeM2{
         position: absolute;
-        top: 63%;
+        top: 56%;
         left: 50%;
         color: white;
         font-family: techMed;
@@ -159,7 +159,7 @@
     }
     .welcomeM0{
         position: absolute;
-        top: 49%;
+        top: 42%;
         left: 50%;
         color: white;
         font-family: techMed;
