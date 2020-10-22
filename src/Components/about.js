@@ -21,7 +21,7 @@ export default class About extends React.Component {
                             hoverBorderColor: 'black',
                             hoverBorderWidth: 2,
                             barThickness: 35,
-                            data: [100, 86, 80, 80, 80, 60, 0],
+                            data: [100, 86, 70, 80, 80, 60, 0],
                             backgroundColor: ['#55B4B0', '#9B2335','#7FCDCD','#BC243C','#98B4D4']
 
                         }
@@ -43,6 +43,7 @@ export default class About extends React.Component {
                     },
 
 
+
                 }
             }
         );
@@ -56,6 +57,24 @@ export default class About extends React.Component {
 
                 <div>
                     <img src={require('../ASSETS/IMAGES/mount.JPG')} className={'aboutImage'}/>
+                    <div className={"aboutTitle"}>
+                       oscar asdfhjkasdbaxcgfsdfgasdfasdfasdfasdf
+                    </div>
+                    <div className={"aboutTitle1"}>
+sdf
+                    </div>
+                    <div className={"aboutTitle2"}>
+sdf
+                    </div>
+                    <div className={"aboutTitle3"}>
+sdf
+                    </div>
+                    <div className={"aboutTitle4"}>
+sdf
+                    </div>
+                    <div className={"aboutTitle5"}>
+sdf
+                    </div>
                 </div>
                 <div className={'canvasWrapper'}>
                 <canvas
