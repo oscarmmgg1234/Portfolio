@@ -4,7 +4,8 @@ import '../ComponentsCSS/navbar.css';
 import withFirebaseAuth from 'react-with-firebase-auth'
 import * as firebase from 'firebase/app';
 import 'firebase/auth';
-import firebaseConfig from './firebaseConfig';
+
+//import firebaseConfig from './firebaseConfig';
 
 
 export default class NAVBAR extends React.Component {
