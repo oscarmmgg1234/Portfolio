@@ -1,7 +1,7 @@
 import React from 'react';
 import {Navbar,Nav,NavbarBrand} from 'react-bootstrap';
 import '../ComponentsCSS/navbar.css';
-import {Link} from 'react-scroll'
+
 
 
 export default class NAVBAR extends React.Component {
