@@ -43,6 +43,14 @@ export default class Home extends React.Component {
                         <Icon name='phone' />
                         Contact
                     </Menu.Item>
+                    <Menu.Item as='a' href={"#donate"} onClick={this.props.onClicked}>
+                        <Icon name='dollar sign icon' />
+                        Donate :)
+                    </Menu.Item>
+                    <Menu.Item as='a' href={"#admin"} onClick={this.props.onClicked}>
+                        <Icon name='id badge icon' />
+                        Admin
+                    </Menu.Item>
                 </Sidebar>
 
 <div className={'Homediv'}>

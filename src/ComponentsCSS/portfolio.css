@@ -1,4 +1,36 @@
 .portfolioContainer{
-    background-color: orange;
     height: 100vh;
+    position: relative;
+    width: 100%;
+}
+.portImage{
+    height: 100vh;
+    width: 100%;
+}
+
+.item1{
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+.item2{
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+.item3{
+    transform: translate(-50%, -50%);
+    position: absolute;
+ }
+.item4{
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+.item5{
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+.item6{
+    transform: translate(-50%, -50%);
+}
+.item7{
+    transform: translate(-50%, -50%);
 }

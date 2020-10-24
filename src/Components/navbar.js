@@ -41,6 +41,9 @@ let navbar = JSON.stringify(this.props.nav);
 
 
                </Nav>
+               <Nav.Link id ={"NavItemName"} href={'#donate'}><Link to={'/donate'}></Link>
+                   Donate
+               </Nav.Link>
                <Nav.Link id ={"NavItemName"} href={'#admin'}><Link to={'/admin'}></Link>
                    ADMIN
                </Nav.Link>
