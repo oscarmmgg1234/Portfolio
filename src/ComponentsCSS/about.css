@@ -206,17 +206,17 @@
         position: absolute;
         transform: translate(-50%, -50%);
         left: 50%;
-        top: 25%;
+        top: 24%;
 
 
 
     }.aboutTitle1{
          font-family: techMed;
-         font-size: 13px;
+         font-size: 11px;
          position: absolute;
          transform: translate(-50%, -50%);
          left: 50%;
-         top: 32%;
+         top: 30%;
 
 
 
@@ -224,7 +224,7 @@
 
     .aboutTitle2{
         font-family: techMed;
-        font-size: 13px;
+        font-size: 11px;
         position: absolute;
         transform: translate(-50%, -50%);
         left: 50%;
@@ -234,7 +234,7 @@
 
     }.aboutTitle3{
          font-family: techMed;
-         font-size: 13px;
+         font-size: 11px;
          position: absolute;
          transform: translate(-50%, -50%);
          left: 50%;
@@ -244,7 +244,7 @@
 
      }.aboutTitle4{
           font-family: techMed;
-          font-size: 13px;
+          font-size: 11px;
           position: absolute;
           transform: translate(-50%, -50%);
           left: 50%;
@@ -254,7 +254,7 @@
 
       }.aboutTitle5{
            font-family: techMed;
-           font-size: 13px;
+           font-size: 11px;
            position: absolute;
            transform: translate(-50%, -50%);
            left: 50%;
