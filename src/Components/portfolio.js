@@ -6,27 +6,21 @@ export default class Portfolio extends React.Component{
         return (
         <div className={"portfolioContainer"}>
             <img src={require('../ASSETS/IMAGES/AdobeStock_298907406.jpeg')} className={'portImage'}/>
-
+            <div className={'portTitle'}> Portfolio </div>
            <div className={'item1'}>
                <div className="ui card">
                    <div className="image">
 
                    </div>
                    <div className="content">
-                       <a className="header">Kristy</a>
-                       <div className="meta">
-                           <span className="date">Joined in 2013</span>
-                       </div>
+                       <a className="header">Web Portfolio SRC</a>
+
                        <div className="description">
-                           Kristy is an art director living in New York.
+                           Web portfolio website using
+                           ReactJs, Firebase, SemanticUI, Bootstrap.
                        </div>
                    </div>
-                   <div className="extra content">
-                       <a>
-                           <i className="user icon"></i>
-                           22 Friends
-                       </a>
-                   </div>
+
                </div>
            </div>
             <div className={'item2'}>
@@ -35,20 +29,15 @@ export default class Portfolio extends React.Component{
 
                     </div>
                     <div className="content">
-                        <a className="header">Kristy</a>
-                        <div className="meta">
-                            <span className="date">Joined in 2013</span>
-                        </div>
+                        <a className="header">Data Structures/ Algorithms</a>
+
                         <div className="description">
-                            Kristy is an art director living in New York.
+                            Advance data structures using c++, as well as optimization and
+                            algorithm analysis.
                         </div>
                     </div>
-                    <div className="extra content">
-                        <a>
-                            <i className="user icon"></i>
-                            22 Friends
-                        </a>
-                    </div>
+
+
                 </div>
             </div>
             <div className={'item3'}>
@@ -57,65 +46,45 @@ export default class Portfolio extends React.Component{
 
                     </div>
                     <div className="content">
-                        <a className="header">Kristy</a>
-                        <div className="meta">
-                            <span className="date">Joined in 2013</span>
-                        </div>
+                        <a className="header">System Administration</a>
+
                         <div className="description">
-                            Kristy is an art director living in New York.
+                            Using VmWare to create and administer virtual Router and switch as well as
+                            DNS,Ftp, Nfs, Http/Https, CentOs virtual workstation, and Tcp servers.
                         </div>
                     </div>
-                    <div className="extra content">
-                        <a>
-                            <i className="user icon"></i>
-                            22 Friends
-                        </a>
-                    </div>
+
                 </div>
             </div>
-
             <div className={'item4'}>
                 <div className="ui card">
                     <div className="image">
 
                     </div>
                     <div className="content">
-                        <a className="header">Kristy</a>
-                        <div className="meta">
-                            <span className="date">Joined in 2013</span>
-                        </div>
-                        <div className="description">
-                            Kristy is an art director living in New York.
-                        </div>
-                    </div>
-                    <div className="extra content">
-                        <a>
-                            <i className="user icon"></i>
-                            22 Friends
-                        </a>
-                    </div>
-                </div>
+                        <a className="header">Barber App</a>
 
+                        <div className="description">
+                            Using ReactJs and Redux to create an cross platform app for mobile.
+                        </div>
+                    </div>
+
+                </div>
+            </div>
             <div className={'item5'}>
                 <div className="ui card">
                     <div className="image">
 
                     </div>
                     <div className="content">
-                        <a className="header">Kristy</a>
-                        <div className="meta">
-                            <span className="date">Joined in 2013</span>
-                        </div>
+                        <a className="header">PathFinding</a>
+
                         <div className="description">
-                            Kristy is an art director living in New York.
+                            Using Qt c++ framework to create a desktop/web assembly game in
+                            which you use path finding algorithms such as Dijkstra's, A*, D*.
                         </div>
                     </div>
-                    <div className="extra content">
-                        <a>
-                            <i className="user icon"></i>
-                            22 Friends
-                        </a>
-                    </div>
+
                 </div>
             </div>
             <div className={'item6'}>
@@ -124,47 +93,21 @@ export default class Portfolio extends React.Component{
 
                     </div>
                     <div className="content">
-                        <a className="header">Kristy</a>
-                        <div className="meta">
-                            <span className="date">Joined in 2013</span>
-                        </div>
+                        <a className="header">Image API database</a>
+
                         <div className="description">
-                            Kristy is an art director living in New York.
+                            Used python and Python Flask to create a API for allowing users to be able
+                            to sign in and safely upload and download images through both web and mobile
+                            browsers.
                         </div>
                     </div>
-                    <div className="extra content">
-                        <a>
-                            <i className="user icon"></i>
-                            22 Friends
-                        </a>
-                    </div>
+
                 </div>
+
             </div>
 
-            <div className={'item7'}>
-                <div className="ui card">
-                    <div className="image">
+            </div>
 
-                    </div>
-                    <div className="content">
-                        <a className="header">Kristy</a>
-                        <div className="meta">
-                            <span className="date">Joined in 2013</span>
-                        </div>
-                        <div className="description">
-                            Kristy is an art director living in New York.
-                        </div>
-                    </div>
-                    <div className="extra content">
-                        <a>
-                            <i className="user icon"></i>
-                            22 Friends
-                        </a>
-                    </div>
-                </div>
-            </div>
-            </div>
-        </div>
 
         )
     }

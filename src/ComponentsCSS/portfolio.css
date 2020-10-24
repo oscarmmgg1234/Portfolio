@@ -7,30 +7,56 @@
     height: 100vh;
     width: 100%;
 }
-
+.portTitle{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 12%;
+    left: 47%;
+    color: white;
+    font-size: 40px;
+    font-family: techMed;
+}
 .item1{
     position: absolute;
     transform: translate(-50%, -50%);
+    top: 30%;
+    left: 29%;
+    width: 18vh;
 }
 .item2{
     transform: translate(-50%, -50%);
     position: absolute;
+    top: 55%;
+    left: 29%;
+    width: 18vh;
 }
 .item3{
     transform: translate(-50%, -50%);
     position: absolute;
+    top: 80%;
+    left: 29%;
+    width: 18vh;
  }
 .item4{
     transform: translate(-50%, -50%);
     position: absolute;
+    top: 30%;
+    left: 66%;
+    width: 18vh;
 }
 .item5{
     transform: translate(-50%, -50%);
     position: absolute;
+    top: 54%;
+    left: 66%;
+    width: 18vh;
+
 }
 .item6{
     transform: translate(-50%, -50%);
-}
-.item7{
-    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 80%;
+    left: 66%;
+    width: 18vh;
+
 }
