@@ -7,17 +7,17 @@ export default class Portfolio extends React.Component{
         <div className={"portfolioContainer"}>
             <img src={require('../ASSETS/IMAGES/AdobeStock_298907406.jpeg')} className={'portImage'}/>
             <div className={'portTitle'}> Portfolio </div>
-           <div className={'item1'}>
+           <div className={'item1'} >
                <div className="ui card">
                    <div className="image">
 
                    </div>
                    <div className="content">
-                       <a className="header">Web Portfolio SRC</a>
+                       <a className="header" href={'https://github.com/oscarmmgg1234/CSEWebDevelopment'}>Web Portfolio SRC </a>
 
                        <div className="description">
                            Web portfolio website using
-                           ReactJs, Firebase, SemanticUI, Bootstrap.
+                           ReactJs, Firebase, SemanticUI, Bootstrap, StipeJs.
                        </div>
                    </div>
 
@@ -29,7 +29,7 @@ export default class Portfolio extends React.Component{
 
                     </div>
                     <div className="content">
-                        <a className="header">Data Structures/ Algorithms</a>
+                        <a className="header" href={'https://github.com/oscarmmgg1234/AdvanceDataStructures-C-'}>Data Structures/ Algorithms</a>
 
                         <div className="description">
                             Advance data structures using c++, as well as optimization and
@@ -46,7 +46,7 @@ export default class Portfolio extends React.Component{
 
                     </div>
                     <div className="content">
-                        <a className="header">System Administration</a>
+                        <a className="header" href={'https://github.com/oscarmmgg1234/SystemAdministration'}>System Administration</a>
 
                         <div className="description">
                             Using VmWare to create and administer virtual Router and switch as well as
@@ -62,7 +62,7 @@ export default class Portfolio extends React.Component{
 
                     </div>
                     <div className="content">
-                        <a className="header">Barber App</a>
+                        <a className="header" href={'https://github.com/oscarmmgg1234/BarberShop'}>Barber App</a>
 
                         <div className="description">
                             Using ReactJs and Redux to create an cross platform app for mobile.
@@ -77,7 +77,7 @@ export default class Portfolio extends React.Component{
 
                     </div>
                     <div className="content">
-                        <a className="header">PathFinding</a>
+                        <a className="header" href={'https://github.com/oscarmmgg1234/pathfidingGameInQT-Cplusplus'}>PathFinding</a>
 
                         <div className="description">
                             Using Qt c++ framework to create a desktop/web assembly game in
@@ -93,7 +93,7 @@ export default class Portfolio extends React.Component{
 
                     </div>
                     <div className="content">
-                        <a className="header">Image API database</a>
+                        <a className="header" href={'https://github.com/oscarmmgg1234/PictureUploadCloudService'}>Image API database</a>
 
                         <div className="description">
                             Used python and Python Flask to create a API for allowing users to be able
