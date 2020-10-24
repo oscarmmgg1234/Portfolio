@@ -95,7 +95,7 @@
 }
 
 
-@media only screen and (max-width: 1000px){
+@media only screen and (max-width: 1520px){
     .aboutImage{
         width: 20vh;
         height: 16vh;
@@ -165,6 +165,96 @@
       }.aboutTitle5{
            font-family: techMed;
            font-size: 16px;
+           position: absolute;
+           transform: translate(-50%, -50%);
+           left: 50%;
+           top: 56%;
+
+
+
+       }
+    .canvasWrapper{
+        width: 45vh;
+        height: 20vh;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        left: 45%;
+        top: 75%
+
+
+    }
+
+}
+@media only screen and (max-width: 800px){
+    .aboutImage{
+        width: 20vh;
+        height: 16vh;
+        border-radius: 4vh;
+        border-color: #353535;
+        border-style: solid;
+        border-width: 4px;
+        left: 50%;
+        top: 15%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+
+    }
+    .aboutTitle{
+        font-family: techLight;
+        font-size: 15px;
+
+        position: absolute;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        top: 25%;
+
+
+
+    }.aboutTitle1{
+         font-family: techMed;
+         font-size: 13px;
+         position: absolute;
+         transform: translate(-50%, -50%);
+         left: 50%;
+         top: 32%;
+
+
+
+     }
+
+    .aboutTitle2{
+        font-family: techMed;
+        font-size: 13px;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        top: 38%;
+
+
+
+    }.aboutTitle3{
+         font-family: techMed;
+         font-size: 13px;
+         position: absolute;
+         transform: translate(-50%, -50%);
+         left: 50%;
+         top: 44%;
+
+
+
+     }.aboutTitle4{
+          font-family: techMed;
+          font-size: 13px;
+          position: absolute;
+          transform: translate(-50%, -50%);
+          left: 50%;
+          top: 50%;
+
+
+
+      }.aboutTitle5{
+           font-family: techMed;
+           font-size: 13px;
            position: absolute;
            transform: translate(-50%, -50%);
            left: 50%;
