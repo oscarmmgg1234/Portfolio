@@ -51,6 +51,7 @@ transition-duration: 500ms;
 
 
 }
+
 #NavItemName:hover{
     animation-name: navButtons;
     animation-duration: 750ms;

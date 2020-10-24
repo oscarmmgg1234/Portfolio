@@ -1,11 +1,8 @@
 import React from 'react';
-import {Navbar,Nav,NavbarBrand} from 'react-bootstrap';
+import {Navbar,Nav} from 'react-bootstrap';
 import '../ComponentsCSS/navbar.css';
-//import withFirebaseAuth from 'react-with-firebase-auth'
-// * as firebase from 'firebase/app';
-//import 'firebase/auth';
+import {Link} from "react-router-dom";
 
-//import firebaseConfig from './firebaseConfig';
 
 
 export default class NAVBAR extends React.Component {
@@ -44,6 +41,9 @@ let navbar = JSON.stringify(this.props.nav);
 
 
                </Nav>
+               <Nav.Link id ={"NavItemName"} href={'#admin'}><Link to={'/admin'}></Link>
+                   ADMIN
+               </Nav.Link>
                <button className={"DrawerContainer"} onClick={this.props.onToggle}>
                    <div className={"line"} />
                    <div className={"line"}/>

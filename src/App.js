@@ -1,14 +1,13 @@
 import React from 'react';
-import {BrowserRouter as router,Link,Switch,Route} from 'react-router-dom';
+import {BrowserRouter,Switch,Route} from "react-router-dom";
 import Home from './Components/home'
 import NAVBAR from "./Components/navbar";
 import About from "./Components/about";
 import Contact from "./Components/contact";
 import Portfolio from "./Components/portfolio";
-
-
 import './App.css';
 import contact from "./Components/contact";
+import admin from "./Components/admin";
 
 
 
@@ -16,9 +15,12 @@ function App() {
     const [toggle,setToggle] = React.useState(false);
   return (
       <>
+          <BrowserRouter>
           <div className={"app"}>
 
               <NAVBAR nav={"OscarLand"} onToggle={()=>setToggle(!toggle)} />
+
+
               <section id={"home"} className={"sections"}>
 
               <Home toggled={toggle} onClicked={()=>setToggle(!toggle)}/>
@@ -33,7 +35,10 @@ function App() {
               <section id={"contact"} className={"sections"}>
               <Contact/>
               </section>
+
           </div>
+
+          </BrowserRouter>
       </>
           );
 }
