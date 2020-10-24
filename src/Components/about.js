@@ -20,7 +20,7 @@ export default class About extends React.Component {
 
                             hoverBorderColor: 'black',
                             hoverBorderWidth: 2,
-                            barThickness: 35,
+                            barThickness: 20,
                             data: [100, 86, 80, 80, 0],
                             backgroundColor: ['#55B4B0', '#9B2335','#7FCDCD','#BC243C']
 
