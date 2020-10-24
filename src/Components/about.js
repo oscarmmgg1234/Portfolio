@@ -13,16 +13,16 @@ export default class About extends React.Component {
 
                 data: {
                     //Bring in data
-                    labels: ['C++', 'Python', 'Full Stack Web Development', 'IT System Administrator', 'Database Management'],
+                    labels: ['C++', 'Python', 'Full Stack Web Development', 'IT System Administrator'],
                     datasets: [
                         {
 
-                            label: "Core Skills",
+
                             hoverBorderColor: 'black',
                             hoverBorderWidth: 2,
                             barThickness: 35,
-                            data: [100, 86, 70, 80, 80, 60, 0],
-                            backgroundColor: ['#55B4B0', '#9B2335','#7FCDCD','#BC243C','#98B4D4']
+                            data: [100, 86, 80, 80, 0],
+                            backgroundColor: ['#55B4B0', '#9B2335','#7FCDCD','#BC243C']
 
                         }
                     ]
@@ -42,6 +42,9 @@ export default class About extends React.Component {
                         }]
                     },
 
+                    legend:{
+                        display: false
+                    }
 
 
                 }
