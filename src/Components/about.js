@@ -58,22 +58,22 @@ export default class About extends React.Component {
                 <div>
                     <img src={require('../ASSETS/IMAGES/mount.JPG')} className={'aboutImage'}/>
                     <div className={"aboutTitle"}>
-                       oscar asdfhjkasdbaxcgfsdfgasdfasdfasdfasdf
+                        About Me
                     </div>
                     <div className={"aboutTitle1"}>
-sdf
+                        " Im an software engineer located in the Coachella Valley, California,
                     </div>
                     <div className={"aboutTitle2"}>
-sdf
+                        my passion is to to program, the intriguing thought of being able to turn any
                     </div>
                     <div className={"aboutTitle3"}>
-sdf
+                        idea into reality just fascinates me and fuels me to learn and master. Currently pursuing
                     </div>
                     <div className={"aboutTitle4"}>
-sdf
+                        my Bachelors In Computer Science and will be obtaining it 2020. When im not
                     </div>
                     <div className={"aboutTitle5"}>
-sdf
+                        programming, I enjoy going to the gym and spending time with my family. "
                     </div>
                 </div>
                 <div className={'canvasWrapper'}>

@@ -6,7 +6,7 @@ export default class admin extends React.Component{
     render() {
         return (
         <div>
-            oscar
+            oscarfirebase
         </div>
         )}
 };
