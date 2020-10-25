@@ -1,4 +1,37 @@
 .contactContainer{
     background-color: #181818;
     height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.contactTitle {
+    align-self: center;
+    color: white;
+    font-size: 30px;
+    font-family: techMed;
+    margin-top: 10vh;
+}
+.socialHandle{
+    margin-top: 5vh;
+    align-self: center;
+
+
+}
+
+#form{
+    margin-top: 4%;
+    align-self: center;
+    width: 40vh;
+    height: 40vh;
+}
+#label{
+    margin-top: 20px;
+    color: white;
+    font-family: techLight;
+}
+#submit{
+    font-family: techLight;
+    background-color: orange;
 }
