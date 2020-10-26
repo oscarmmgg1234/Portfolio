@@ -41,11 +41,11 @@ let navbar = JSON.stringify(this.props.nav);
 
 
                </Nav>
-               <Nav.Link id ={"NavItemName"} href={'#donate'}><Link to={'/donate'}></Link>
+               <Nav.Link id ={"NavItemName"} href={'#donate'}>
                    Donate
                </Nav.Link>
-               <Nav.Link id ={"NavItemName"} href={'#admin'}><Link to={'/admin'}></Link>
-                   ADMIN
+               <Nav.Link id ={"NavItemName"} href={'admin'}>
+                   ADMIN<Link to={'/admin'}/>
                </Nav.Link>
                <button className={"DrawerContainer"} onClick={this.props.onToggle}>
                    <div className={"line"} />

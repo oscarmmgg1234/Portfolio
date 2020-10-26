@@ -8,6 +8,8 @@ import Portfolio from "./Components/portfolio";
 import './App.css';
 import contact from "./Components/contact";
 import admin from "./Components/admin";
+import dashboard from "./Components/dashboard";
+
 
 
 
@@ -15,30 +17,40 @@ function App() {
     const [toggle,setToggle] = React.useState(false);
   return (
       <>
-          <BrowserRouter>
-          <div className={"app"}>
 
-              <NAVBAR nav={"OscarLand"} onToggle={()=>setToggle(!toggle)} />
+          <div className={"app"}>
+              <BrowserRouter>
+                  <NAVBAR nav={"OscarLand"} onToggle={()=>setToggle(!toggle)} />
+                  <Switch>
+
+                      <Route path={'/admin'} component={admin}/>
+
+
+               <Route path={'/'}>
 
 
               <section id={"home"} className={"sections"}>
 
-              <Home toggled={toggle} onClicked={()=>setToggle(!toggle)}/>
-              </section>
+                  <Home onToggle={()=>setToggle(!toggle)}/>
 
+              </section>
               <section id={"about"} className={"sections"}>
-              <About/>
+                  <About/>
               </section>
               <section id={"port"} className={"sections"}>
-              <Portfolio/>
+                  <Portfolio/>
               </section>
               <section id={"contact"} className={"sections"}>
-              <Contact/>
+                  <Contact/>
               </section>
+               </Route>
+                      <Route path={'/#dashboard'} component={dashboard}/>
+                  </Switch>
 
+              </BrowserRouter>
           </div>
 
-          </BrowserRouter>
+
       </>
           );
 }

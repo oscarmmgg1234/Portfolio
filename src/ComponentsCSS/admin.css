@@ -1,0 +1,9 @@
+.loginPage{
+    height: 100vh;
+    width: 100%;
+}
+#loginTitle{
+    font-family: techLight;
+    font-size: 30px;
+    margin-top: 10vh;
+}
