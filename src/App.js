@@ -44,7 +44,6 @@ function App() {
                   <Contact/>
               </section>
                </Route>
-                      <Route path={'/#dashboard'} component={dashboard}/>
                   </Switch>
 
               </BrowserRouter>
