@@ -25,7 +25,7 @@ function App() {
 
                       <Route path={'/admin'} component={admin}/>
 
-
+                <Route path={'/#dashboard'} component={dashboard}/>
                <Route path={'/'}>
 
 
