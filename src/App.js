@@ -8,7 +8,6 @@ import Portfolio from "./Components/portfolio";
 import './App.css';
 import contact from "./Components/contact";
 import admin from "./Components/admin";
-import dashboard from "./Components/dashboard";
 
 
 
@@ -25,13 +24,13 @@ function App() {
 
                       <Route path={'/admin'} component={admin}/>
 
-                <Route path={'/#dashboard'} component={dashboard}/>
+
                <Route path={'/'}>
 
 
               <section id={"home"} className={"sections"}>
 
-                  <Home onToggle={()=>setToggle(!toggle)}/>
+                  <Home toggled={toggle} onClicked={()=>setToggle(!toggle)}/>
 
               </section>
               <section id={"about"} className={"sections"}>
@@ -45,7 +44,6 @@ function App() {
               </section>
                </Route>
                   </Switch>
-
               </BrowserRouter>
           </div>
 

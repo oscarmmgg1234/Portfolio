@@ -2,9 +2,14 @@ import React from 'react';
 import 'semantic-ui-css/semantic.min.css';
 import '../ComponentsCSS/home.css'
 import {Sidebar,Menu,Icon} from "semantic-ui-react";
+import {Link} from "react-router-dom";
 
 
 export default class Home extends React.Component {
+
+    constructor(props) {
+        super(props);
+    }
     render(){
 
         return (<>
@@ -47,9 +52,9 @@ export default class Home extends React.Component {
                         <Icon name='dollar sign icon' />
                         Donate :)
                     </Menu.Item>
-                    <Menu.Item as='a' href={"#admin"} onClick={this.props.onClicked}>
+                    <Menu.Item as='a' href={"admin"} onClick={this.props.onClicked}>
                         <Icon name='id badge icon' />
-                        Admin
+                        Admin<Link to={'/admin'}/>
                     </Menu.Item>
                 </Sidebar>
 

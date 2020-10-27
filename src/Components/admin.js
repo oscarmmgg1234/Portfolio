@@ -1,6 +1,7 @@
 import React from "react"
 import firebase from "firebase";
 import firebaseui from "firebaseui";
+import {Link} from "react-router-dom";
 
 export default class admin extends React.Component{
 
@@ -20,12 +21,6 @@ componentDidMount() {
     var firebaseui = require('firebaseui');
     firebase.initializeApp(firebaseConfig);
     var ui = new firebaseui.auth.AuthUI(firebase.auth());
-    ui.start('#firebaseui-auth-container', {
-        signInOptions: [
-            firebase.auth.EmailAuthProvider.PROVIDER_ID
-        ],
-        // Other config options...
-    });
 
     ui.start('#firebaseui-auth-container', {
         signInOptions: [
