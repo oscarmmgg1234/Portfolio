@@ -1,5 +1,4 @@
 .app{
-    height: 1500px;
     scroll-behavior: smooth;
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
