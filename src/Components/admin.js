@@ -48,7 +48,7 @@ componentDidMount() {
                         <button id = {'Sbutton'}
                             onClick={() => {
                                 const googleAuthProvider = new firebase.auth.GoogleAuthProvider();
-                                firebase.auth().signInWithPopup(googleAuthProvider);
+                                firebase.auth().signInWithRedirect(googleAuthProvider);
                             }}
                         >
                             Sign In with Google
