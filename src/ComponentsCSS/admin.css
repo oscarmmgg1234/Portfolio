@@ -1,9 +1,60 @@
 .loginPage{
     height: 100vh;
     width: 100%;
+    background-color: #181818;
+    display: flex;
+    flex-direction: column;]
+    position: absolute;
+    align-items: center;
+
+
+
 }
-#loginTitle{
+#Sbutton{
+    margin-top: 14vh;
+    width: 300px;
+    height: 62px;
+    background-color: mediumaquamarine;
+    font-family: techMed;
+    font-size: 15px;
+
+
+}
+
+#Obutton{
+    margin-top: 3vh;
+    width: 300px;
+    height: 62px;
+    background-color: darkred;
+    color: ghostwhite;
+    font-family: techMed;
+    font-size: 15px;
+
+
+
+}
+.btnContainer{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+}
+#title{
+    margin-top: 14vh ;
+    color: white;
     font-family: techLight;
-    font-size: 30px;
-    margin-top: 10vh;
+    font-size: 40px;
+}
+#auth{
+    margin-top: 5vh;
+    color: ghostwhite;
+    font-size: 14px;
+    font-family: techLight;
+
+}
+#Link{
+    margin-top: 5vh;
+    font-size: 20px;
+    color: orange;
+    font-family: techLight;
 }

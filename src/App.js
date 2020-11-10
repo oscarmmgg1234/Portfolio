@@ -8,6 +8,7 @@ import Portfolio from "./Components/portfolio";
 import './App.css';
 import contact from "./Components/contact";
 import admin from "./Components/admin";
+import dashboard from "./Components/Dashboard";
 
 
 
@@ -19,14 +20,14 @@ function App() {
 
           <div className={"app"}>
               <BrowserRouter>
-                  <NAVBAR nav={"OscarLand"} onToggle={()=>setToggle(!toggle)} />
+
                   <Switch>
 
                       <Route path={'/admin'} component={admin}/>
-
+                        <Route path={'/dashboard'} component={dashboard}/>
 
                <Route path={'/'}>
-
+                   <NAVBAR nav={"OscarLand"} onToggle={()=>setToggle(!toggle)} />
 
               <section id={"home"} className={"sections"}>
 
