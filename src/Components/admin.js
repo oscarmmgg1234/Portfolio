@@ -1,10 +1,8 @@
 import React from "react"
 import firebase from "firebase";
 import {Link,Redirect} from "react-router-dom";
-import dashboard from './Dashboard'
 import {
     FirebaseAuthProvider,
-    FirebaseAuthConsumer,
     IfFirebaseAuthed,
     IfFirebaseAuthedAnd
 } from "@react-firebase/auth";
@@ -43,6 +41,10 @@ componentDidMount() {
 
                 <FirebaseAuthProvider {...this.firebaseConfig} firebase={firebase}>
                     <div className = {'btnContainer'}>
+                       <Link to={'/'}> <button id = {'back'}>
+                            Back to Home
+
+                       </button></Link>
                         <button id = {'Sbutton'}
                             onClick={() => {
                                 const googleAuthProvider = new firebase.auth.GoogleAuthProvider();
@@ -57,8 +59,10 @@ componentDidMount() {
                                 firebase.auth().signOut();
                             }}
                         >
+
                             Sign Out
                         </button>
+
 
                         <div>
 
