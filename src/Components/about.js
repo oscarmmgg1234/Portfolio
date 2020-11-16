@@ -59,7 +59,7 @@ export default class About extends React.Component {
             <div className="aboutContainer">
 
                 <div>
-                    <img src={require('../ASSETS/IMAGES/mount.JPG')} className={'aboutImage'}/>
+                    <img src={require('../ASSETS/IMAGES/stand.png')} className={'aboutImage'}/>
                     <div className={"aboutTitle"}>
                         About Me
                     </div>
