@@ -8,7 +8,7 @@ import {
 } from "@react-firebase/auth";
 import '../ComponentsCSS/admin.css'
 
-export default class admin extends React.Component{
+export default class Admin extends React.Component{
 
     
     constructor(props) {
@@ -87,7 +87,8 @@ componentDidMount() {
                         <IfFirebaseAuthed>
                             {({user}) => {
                                 if(user.email == "oscarmmgg1234@gmail.com") {
-                                    return <Link to={'/dashboard'} id={'Link'}>Press To Be Redirected</Link> //only admin could sign in
+
+                                    return <Link onClick={this.props.onSigned} to={'/dashboard'} id={'Link'}>Press To Be Redirected</Link> //only admin could sign in
                                 }
                             }}
                         </IfFirebaseAuthed>

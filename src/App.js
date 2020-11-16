@@ -7,14 +7,15 @@ import Contact from "./Components/contact";
 import Portfolio from "./Components/portfolio";
 import './App.css';
 import contact from "./Components/contact";
-import admin from "./Components/admin";
-import dashboard from "./Components/Dashboard";
+import Admin from "./Components/admin";
+import Dashboard from "./Components/Dashboard";
 
 
 
 
 function App() {
     const [toggle,setToggle] = React.useState(false);
+    const [signedIN,setSigned] = React.useState(false);
   return (
       <>
 
@@ -23,8 +24,12 @@ function App() {
 
                   <Switch>
 
-                      <Route path={'/admin'} component={admin}/>
-                        <Route path={'/dashboard'} component={dashboard}/>
+                      <Route path={'/admin'} >
+                          <Admin onSigned={()=>setSigned(true)} />
+                      </Route>
+                        <Route path={'/dashboard'} >
+                        <Dashboard signedStatus={signedIN}/>
+                        </Route>
 
                <Route path={'/'}>
                    <NAVBAR nav={"OscarLand"} onToggle={()=>setToggle(!toggle)} />
