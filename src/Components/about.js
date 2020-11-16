@@ -12,6 +12,7 @@ export default class About extends React.Component {
                 type: "horizontalBar",
 
                 data: {
+
                     //Bring in data
                     labels: ['C++', 'Python', 'Full Stack Web Development', 'IT System Administrator'],
                     datasets: [
@@ -28,6 +29,7 @@ export default class About extends React.Component {
                     ]
                 },
                 options: {
+
                     //Customize chart options
                     scales: {
                         xAxes: [{
@@ -43,7 +45,11 @@ export default class About extends React.Component {
                     },
 
                     legend:{
-                        display: false
+                        labels:{
+                          fontColor: "white"
+                        },
+                        display: false,
+                        fontColor: "white"
                     }
 
 
