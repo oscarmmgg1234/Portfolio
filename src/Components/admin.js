@@ -65,18 +65,30 @@ componentDidMount() {
 
 
                         <div>
+                            <IfFirebaseAuthedAnd
+                                filter={({ providerId, user }) => {
+                                    if(!user.email){return false;}
+                                    return (
+                                        providerId !== "anonymous" &&
+                                        user.email
+                                    );
+                                }}
+                            >
 
+                            </IfFirebaseAuthedAnd>
                             <IfFirebaseAuthedAnd
                                 filter={({ providerId }) => providerId !== "anonymous"}
                             >
-                                {({ providerId }) => {
-                                    return <div id = {'auth'}>You are authenticated with {providerId}</div>;
+                                {({ providerId ,user}) => {
+                                    return <div id = {'auth'}>You are authenticated with { providerId }</div>;
                                 }}
                             </IfFirebaseAuthedAnd>
                         </div>
                         <IfFirebaseAuthed>
-                            {() => {
-                                return <Link to={'/dashboard'} id={'Link'} >Press To Be Redirected</Link>
+                            {({user}) => {
+                                if(user.email == "oscarmmgg1234@gmail.com") {
+                                    return <Link to={'/dashboard'} id={'Link'}>Press To Be Redirected</Link> //only admin could sign in
+                                }
                             }}
                         </IfFirebaseAuthed>
                     </div>
