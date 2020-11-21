@@ -1,14 +1,14 @@
 import React from 'react';
 import {BrowserRouter,Switch,Route} from "react-router-dom";
-import Home from './Components/home'
-import NAVBAR from "./Components/navbar";
-import About from "./Components/about";
-import Contact from "./Components/contact";
-import Portfolio from "./Components/portfolio";
+import Home from './screens/home'
+import NAVBAR from "./screens/navbar";
+import About from "./screens/about";
+import Contact from "./screens/contact";
+import Portfolio from "./screens/portfolio";
 import './App.css';
-import contact from "./Components/contact";
-import Admin from "./Components/admin";
-import Dashboard from "./Components/Dashboard";
+import contact from "./screens/contact";
+import Admin from "./screens/admin";
+import Dashboard from "./screens/Dashboard";
 
 
 
