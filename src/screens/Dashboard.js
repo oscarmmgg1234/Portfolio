@@ -1,21 +1,11 @@
 import React from "react";
-import {Link} from "react-router-dom";
+
+import Dash from "../Components/adminC/DashSpeed";
 
 export default class Dashboard extends React.Component{
-constructor(props) {
-    super(props);
-}
-    render() {
-if(this.props.signedStatus == true) {
-    return (
-        <h1>Admin Page</h1>
+render() {
+    return(
+    <Dash IsAuth={this.props.signedStatus}/>
     )
 }
-else {
-    return (<>
-        <h1>Must be admin</h1>
-        <Link to={"/admin"}>Press To Sign in</Link>
-    </>)
-}
-    }
 }

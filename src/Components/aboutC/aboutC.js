@@ -1,12 +1,12 @@
 import React from "react";
 import '../../ComponentsCSS/about.css'
-import ChartR from "./chart";
+import ChartR from "./chartR";
 
 const AboutC = () => {
     return (
         <div className="aboutContainer">
             <div>
-                <img src={require('../ASSETS/IMAGES/stand.png')} className={'aboutImage'}/>
+                <img src={require('../../ASSETS/IMAGES/stand.png')} className={'aboutImage'}/>
                 <div className={"aboutTitle"}>
                     About Me
                 </div>

@@ -4,7 +4,7 @@ import '../../ComponentsCSS/home.css'
 const HomeC = () => {
     return (
         <div className={'Homediv'}>
-            <img src={require('../ASSETS/IMAGES/darker2.png')} className={'HomeImage'}/>
+            <img src={require('../../ASSETS/IMAGES/darker2.png')} className={'HomeImage'}/>
             <div className={'WelcomeHeader'}>
                 Hey,
             </div>
