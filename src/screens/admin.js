@@ -1,9 +1,9 @@
 import React from "react"
 import SingOnC from "../Components/adminC/googleSignC";
 
-const Admin = ({onSigned}) =>{
+const Admin = ({onSigned,config}) =>{
     return (
-        <SingOnC Auth={onSigned}/>
+        <SingOnC Auth={onSigned} fConfig={config}/>
     )//end of return
 }//end of component
 

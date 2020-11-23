@@ -16,19 +16,28 @@ import Dashboard from "./screens/Dashboard";
 function App() {
     const [toggle,setToggle] = React.useState(false);
     const [signedIN,setSigned] = React.useState(false);
+    const fireConfig = {  apiKey: "AIzaSyCLVMM8vmHBNT--ldKCBZmmUi5IEv-Ed1o",
+        authDomain: "webportf-f8d66.firebaseapp.com",
+        databaseURL: "https://webportf-f8d66.firebaseio.com",
+        projectId: "webportf-f8d66",
+        storageBucket: "webportf-f8d66.appspot.com",
+        messagingSenderId: "26027074277",
+        appId: "1:26027074277:web:448a6046ae80ce973aea0c",
+        measurementId: "G-LXZBXVH5S6"}
+
+
   return (
       <>
-
           <div className={"app"}>
               <BrowserRouter>
 
                   <Switch>
 
                       <Route path={'/admin'} >
-                          <Admin onSigned={()=>setSigned(true)} />
+                          <Admin onSigned={()=>setSigned(true)} config={fireConfig}/>
                       </Route>
                         <Route path={'/dashboard'} >
-                        <Dashboard signedStatus={signedIN}/>
+                        <Dashboard signedStatus={signedIN} config={fireConfig}/>
                         </Route>
 
                <Route path={'/'}>
