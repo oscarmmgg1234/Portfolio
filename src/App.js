@@ -25,29 +25,22 @@ function App() {
         appId: "1:26027074277:web:448a6046ae80ce973aea0c",
         measurementId: "G-LXZBXVH5S6"}
 
-
-  return (
+        return (
       <>
           <div className={"app"}>
               <BrowserRouter>
-
                   <Switch>
-
                       <Route path={'/admin'} >
                           <Admin onSigned={()=>setSigned(true)} config={fireConfig}/>
                       </Route>
                         <Route path={'/dashboard'} >
                         <Dashboard signedStatus={signedIN} config={fireConfig}/>
                         </Route>
-
-               <Route path={'/'}>
+                      <Route path={'/'}>
                    <NAVBAR nav={"OscarLand"} onToggle={()=>setToggle(!toggle)} />
-
-              <section id={"home"} className={"sections"}>
-
-                  <Home toggled={toggle} onClicked={()=>setToggle(!toggle)}/>
-
-              </section>
+                   <section id={"home"} className={"sections"}>
+                       <Home toggled={toggle} onClicked={()=>setToggle(!toggle)}/>
+                   </section>
               <section id={"about"} className={"sections"}>
                   <About/>
               </section>
@@ -61,8 +54,6 @@ function App() {
                   </Switch>
               </BrowserRouter>
           </div>
-
-
       </>
           );
 }
