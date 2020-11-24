@@ -10,10 +10,11 @@ export default class Dash extends React.Component{
 
 
     }//end of constructor
+
     render() {
         if(this.props.IsAuth == true) {
             return (
-                <h1>Admin Page</h1>
+                <h1>Admin Page </h1>
             )
         }
         else {
