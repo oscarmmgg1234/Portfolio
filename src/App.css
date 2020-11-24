@@ -32,5 +32,6 @@
     }
     #portrait{
         display: flex;
+        color: white;
     }
 }
