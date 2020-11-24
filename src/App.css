@@ -16,7 +16,7 @@
     scroll-snap-align: start;
 
 }
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 800px ) {
     .app{
         scroll-behavior: smooth;
         overflow-y: scroll;
@@ -25,18 +25,16 @@
         position: fixed;
 
     }
+    @media (orientation: landscape){
 
-}
-@media (orientation: landscape){
-    @media screen and (max-width: 700px) and (min-width: 500px){
         .app {
             display: none;
-
         }
-
         #portrait {
             display: flex;
             color: white;
         }
+
     }
+
 }
