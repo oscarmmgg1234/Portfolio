@@ -6,6 +6,9 @@
     position: fixed;
     background-color: #181818;
 }
+#portrait{
+    display: none;
+}
 .sections{
     height: 100vh;
     width: 100%;
@@ -26,5 +29,8 @@
 @media (orientation: landscape){
     .app{
         display: none;
+    }
+    #portrait{
+        display: flex;
     }
 }

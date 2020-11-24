@@ -9,6 +9,7 @@ import './App.css';
 import contact from "./screens/contact";
 import Admin from "./screens/admin";
 import Dashboard from "./screens/Dashboard";
+import Portrait from "./Components/homeC/portraitC";
 
 
 
@@ -27,6 +28,7 @@ function App() {
 
         return (
       <>
+          <Portrait/>
           <div className={"app"}>
               <BrowserRouter>
                   <Switch>
