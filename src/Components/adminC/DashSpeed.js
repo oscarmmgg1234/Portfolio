@@ -4,7 +4,6 @@ import '../../ComponentsCSS/dashboard.css'
 import axios from 'axios'
 import List from "./list";
 
-
 export default class Dash extends React.Component{
 
     constructor(props) {
