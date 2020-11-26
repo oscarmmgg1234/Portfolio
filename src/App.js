@@ -27,9 +27,10 @@ function App() {
         measurementId: "G-LXZBXVH5S6"}
 
         return (
+
       <>
           <Portrait/>
-          <div className={"app"}>
+          <div className={"app"} >
               <BrowserRouter>
                   <Switch>
                       <Route path={'/admin'} >

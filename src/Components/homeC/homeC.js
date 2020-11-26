@@ -2,9 +2,12 @@ import React from 'react';
 import '../../ComponentsCSS/home.css'
 
 const HomeC = () => {
+    const [imageLoaded, setLoaded] = React.useState(false)
     return (
         <div className={'Homediv'}>
-            <img src={require('../../ASSETS/IMAGES/darker2.png')} className={'HomeImage'}/>
+            <img src={require('../../ASSETS/IMAGES/darker2.png')}  className={`HomeImage image-${
+                imageLoaded ? 'visible' :  'hidden'
+            }`} onLoad={()=>{setLoaded(true)}}/>
             <div className={'WelcomeHeader'}>
                 Hey,
             </div>

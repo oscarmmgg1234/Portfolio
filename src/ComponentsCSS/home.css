@@ -20,7 +20,22 @@
     display: inherit;
     position: absolute;
     height: 100vh;
+    transition: opacity 1s;
 
+}
+.image-visible{
+    width: inherit;
+    display: inherit;
+    position: absolute;
+    height: 100vh;
+    opacity: 1;
+}
+.image-hidden {
+    opacity: 0;
+    width: inherit;
+    display: inherit;
+    position: absolute;
+    height: 100vh;
 }
 .WelcomeHeader{
     position: absolute;
