@@ -4,22 +4,22 @@ import axios from 'axios'
 
 
 const people = [
-    {email: 'Elson@gmail.com', lastName: 'Correia', info: {age: 24}},
-    {email: 'John@gmail.com', lastName: 'Doe', info: {age: 18}},
-    {email: 'Jane@gmail.com', lastName: 'Doe', info: {age: 34}},
-    {email: 'Maria@gmail.com', lastName: 'Carvalho', info: {age: 22}},
-    {email: 'Kelly@gmail.com', lastName: 'Correia', info:{age: 23}},
-    {email: 'Don@gmail.com', lastName: 'Quichote', info: {age: 39}},
-    {email: 'Marcus@gmail.com', lastName: 'Correia', info: {age: 0}},
-    {email: 'Bruno@gmail.com', lastName: 'Gonzales', info: {age: 25}},
-    {email: 'John@gmail.com', lastName: 'Doe', info: {age: 18}},
-    {email: 'Jane@gmail.com', lastName: 'Doe', info: {age: 34}},
-    {email: 'Maria@gmail.com', lastName: 'Carvalho', info: {age: 22}},
-    {email: 'Kelly@gmail.com', lastName: 'Correia', info:{age: 23}},
-    {email: 'Don@gmail.com', lastName: 'Quichote', info: {age: 39}},
-    {email: 'Marcus@gmail.com', lastName: 'Correia', info: {age: 0}},
-    {email: 'Bruno@gmail.com', lastName: 'Gonzales', info: {age: 25}},
-    {email: 'Alonzo@gmail.com', lastName: 'Correia', info: {age: 44}}
+    {email: 'Elson@gmail.com', lastName: 'Correia', info: {index: 1}},
+    {email: 'John@gmail.com', lastName: 'Doe', info: {index: 2}},
+    {email: 'Jane@gmail.com', lastName: 'Doe', info: {index: 3}},
+    {email: 'Maria@gmail.com', lastName: 'Carvalho', info: {index: 4}},
+    {email: 'Kelly@gmail.com', lastName: 'Correia', info:{index: 5}},
+    {email: 'Don@gmail.com', lastName: 'Quichote', info: {index: 6}},
+    {email: 'Marcus@gmail.com', lastName: 'Correia', info: {index: 7}},
+    {email: 'Bruno@gmail.com', lastName: 'Gonzales', info: {index: 8}},
+    {email: 'John@gmail.com', lastName: 'Doe', info: {index: 9}},
+    {email: 'Jane@gmail.com', lastName: 'Doe', info: {index: 10}},
+    {email: 'Maria@gmail.com', lastName: 'Carvalho', info: {index: 11}},
+    {email: 'Kelly@gmail.com', lastName: 'Correia', info:{index: 12}},
+    {email: 'Don@gmail.com', lastName: 'Quichote', info: {index: 13}},
+    {email: 'Marcus@gmail.com', lastName: 'Correia', info: {index: 14}},
+    {email: 'Bruno@gmail.com', lastName: 'Gonzales', info: {index: 15}},
+    {email: 'Alonzo@gmail.com', lastName: 'Correia', info: {index: 16}}
 ]
 
 //post request to handle uploading data to rds
@@ -38,8 +38,8 @@ const List = () => {
 
         return (
 
-            <div key={idx}>
-                <div style={{color: "black", fontSize: 40,marginTop: 20}}>{person.email} | {person.lastName}</div>
+            <div key={idx} style={{ width: "100%",padding: 5}}>
+                <div style={{color: "black", fontSize: 40,marginTop: 20,right: 0}}>{person.info.index} | {   person.email} | {person.lastName}</div>
             </div>
 
         );
