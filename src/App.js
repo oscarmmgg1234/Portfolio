@@ -12,8 +12,6 @@ import Dashboard from "./screens/Dashboard";
 import Portrait from "./Components/homeC/portraitC";
 
 
-
-
 function App() {
     const [toggle,setToggle] = React.useState(false);
     const [signedIN,setSigned] = React.useState(false);
