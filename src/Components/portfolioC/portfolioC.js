@@ -4,7 +4,7 @@ import '../../ComponentsCSS/portfolio.css'
 const Port = () => {
     return (
                 <div className={"portfolioContainer"}>
-                    <img src={require('../../ASSETS/IMAGES/AdobeStock_298907406.jpeg')} className={'portImage'}/>
+                    <img src={require('../../ASSETS/IMAGES/AdobeStock_298907406.jpg')} className={'portImage'}/>
                     <div className={'portTitle'}> Portfolio </div>
                     <div className={'item1'} >
                         <div className="ui card">

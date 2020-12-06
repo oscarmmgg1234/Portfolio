@@ -1,15 +1,14 @@
-import React from 'react';
+import React, {Suspense,lazy} from 'react';
 import {BrowserRouter,Switch,Route} from "react-router-dom";
-import Home from './screens/home'
-import NAVBAR from "./screens/navbar";
-import About from "./screens/about";
-import Contact from "./screens/contact";
-import Portfolio from "./screens/portfolio";
-import './App.css';
-import contact from "./screens/contact";
-import Admin from "./screens/admin";
-import Dashboard from "./screens/Dashboard";
 import Portrait from "./Components/homeC/portraitC";
+import './App.css';
+const Home = lazy(()=>import('./screens/home'))
+const NAVBAR = lazy(()=>import( "./screens/navbar"));
+const About = lazy(()=>import('./screens/about'));
+const Portfolio = lazy(()=>import( "./screens/portfolio"));
+const Contact = lazy(()=>import("./screens/contact"));
+const Admin = lazy(()=>import( "./screens/admin"));
+const Dashboard = lazy( ()=>import("./screens/Dashboard"));
 
 
 function App() {
@@ -29,7 +28,9 @@ function App() {
       <>
           <Portrait/>
           <div className={"app"} >
-              <BrowserRouter>
+
+                  <BrowserRouter>
+                      <Suspense fallback={()=>{return <div>Loading..</div>}}>
                   <Switch>
                       <Route path={'/admin'} >
                           <Admin onSigned={()=>setSigned(true)} config={fireConfig}/>
@@ -42,9 +43,11 @@ function App() {
                    <section id={"home"} className={"sections"}>
                        <Home toggled={toggle} onClicked={()=>setToggle(!toggle)}/>
                    </section>
-              <section id={"about"} className={"sections"}>
+
+              <section id={"about"}  className={"sections"}>
                   <About/>
               </section>
+
               <section id={"port"} className={"sections"}>
                   <Portfolio/>
               </section>
@@ -53,7 +56,9 @@ function App() {
               </section>
                </Route>
                   </Switch>
+                      </Suspense>
               </BrowserRouter>
+
           </div>
       </>
           );

@@ -2,11 +2,16 @@ import React from "react";
 import '../../ComponentsCSS/about.css'
 import ChartR from "./chartR";
 
+
+
+
+
+
 const AboutC = () => {
     return (
         <div className="aboutContainer">
             <div>
-                <img src={require('../../ASSETS/IMAGES/stand.png')}  className={'aboutImage'}/>
+                <img src={require('../../ASSETS/IMAGES/stand.jpg')}  className={'aboutImage'}/>
                 <div className={"aboutTitle"}>
                     About Me
                 </div>
@@ -26,9 +31,11 @@ const AboutC = () => {
                     programming, I enjoy going to the gym and spending time with my family. "
                 </div>
             </div>
+
             <ChartR/>
+
         </div>
     )//end of return
 }//end of component
 
-export default AboutC
+export default AboutC;
