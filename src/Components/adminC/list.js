@@ -3,6 +3,7 @@ import {PlainList} from "flatlist-react";
 import axios from 'axios'
 
 
+
 const people = [
     {email: 'Elson@gmail.com', lastName: 'Correia', info: {index: 1}},
     {email: 'John@gmail.com', lastName: 'Doe', info: {index: 2}},
@@ -29,17 +30,21 @@ const people = [
 
 
 const List = () => {
-   function getData(){
-        axios.get('https://u96nx3rkj6.execute-api.us-west-1.amazonaws.com/GET/').then(res=> {
-            return <h1>{res}</h1>
-        })
+
+   const getRandomColor = ()=>{
+        const red =Math.floor(Math.random() * 256);
+       const green =Math.floor(Math.random() * 256);
+       const blue =Math.floor(Math.random() * 256);
+
+       return `rgba(${red},${green},${blue},0.6)`
     }
+
     const renderPerson = (person, idx) => {
 
         return (
 
             <div key={idx} style={{ width: "100%",padding: 5}}>
-                <div style={{color: "black", fontSize: 40,marginTop: 20,right: 0}}>{person.info.index} | {   person.email} | {person.lastName}</div>
+                <div style={{color: "black", fontSize: 40,right: 0,borderWith: 2, borderStyle: "solid",borderColor: "black",paddingLeft: 5,backgroundColor: getRandomColor(), overflowX: "scroll"}}>{person.info.index} | {   person.email} | {person.lastName}</div>
             </div>
 
         );

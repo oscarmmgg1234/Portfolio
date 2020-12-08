@@ -3,7 +3,6 @@ import {Link} from "react-router-dom";
 import '../../ComponentsCSS/dashboard.css'
 import List from "./list";
 
-
 export default class Dash extends React.Component{
 
     constructor(props) {
@@ -16,8 +15,12 @@ export default class Dash extends React.Component{
         if(this.props.IsAuth == true) {
             return (
                 <div id={'dashboard'}>
-                    <p style={{marginTop: "4vh", fontSize: 50}}>Email Entries</p>
+                    <p style={{marginTop: "4vh", fontSize: 50}}>Contact Request</p>
+                    <div style={{width: "63vw",marginTop: "4vh"}}>
+                        <button> Refresh </button>
+                    </div>
                 <div id={'emailContainer'}>
+
                <List/>
                </div>
                 </div>
@@ -25,7 +28,7 @@ export default class Dash extends React.Component{
         }
         else {
             return (<>
-                <h1>Must be admin</h1>
+                <h1 style={{color:"white"}}>Must be admin</h1>
                 <Link to={"/admin"}>Press To Sign in</Link>
             </>)
         }
