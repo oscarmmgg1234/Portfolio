@@ -55,7 +55,9 @@ transition-duration: 500ms;
 #NavItemName:hover{
     animation-name: navButtons;
     animation-duration: 750ms;
+    color: deeppink;
 }
+
 
 #NavItemName1{
 margin-left: 30px;
@@ -65,7 +67,10 @@ margin-left: 30px;
 #NavItemName1:hover{
     animation-name: navButtons;
     animation-duration: 1s;
+    color: deeppink;
 }
+
+
 .DrawerContainer{
     height: 34px;
     width: 35px;

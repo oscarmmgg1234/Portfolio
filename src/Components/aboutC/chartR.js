@@ -13,7 +13,7 @@ export default class ChartR extends React.Component{
                 data: {
 
                     //Bring in data
-                    labels: ['C++', 'Python', 'Full Stack Web Development', 'IT System Administrator'],
+                    labels: ['C++', 'Javascript/NodeJs', 'React/React-Native', 'AWS', 'Python'],
                     datasets: [
                         {
 
@@ -21,8 +21,8 @@ export default class ChartR extends React.Component{
                             hoverBorderColor: 'black',
                             hoverBorderWidth: 2,
                             barThickness: 25,
-                            data: [100, 86, 80, 80, 0],
-                            backgroundColor: ['#55B4B0', '#9B2335','#7FCDCD','#BC243C']
+                            data: [100,90, 85, 85, 87, 0],
+                            backgroundColor: ['#55B4B0', '#9B2335','#7FCDCD','#BC243C', '#BC255C']
 
                         }
                     ]
@@ -31,6 +31,7 @@ export default class ChartR extends React.Component{
 
                     //Customize chart options
                     scales: {
+
                         xAxes: [{
                             gridLines: {
                                 display: false

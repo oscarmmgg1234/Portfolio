@@ -1,11 +1,11 @@
 import React from "react";
 import '../../ComponentsCSS/contact.css'
 
-const Selected = () => {
+const Selected = (props) => {
     return(
         <div className="field">
             <label id={'label'}>Country</label>
-            <select className="ui search dropdown">
+            <select className="ui search dropdown" onChange={event => props.setSelect(event.target.value)} value={props.select}>
                 <option value="">Select Country</option>
                 <option value="AF">Afghanistan</option>
                 <option value="AX">Åland Islands</option>
