@@ -30,15 +30,14 @@ jobs:
       - name: Install
         run: npm ci
 
-      # CRA v3/webpack4 + Node>=17 needs this flag (your local build already does it)
+      # CRA v3/webpack4 + Node>=17 needs this flag (your error 0308010C)
       - name: Build
         run: npm run build
         env:
           NODE_OPTIONS: --openssl-legacy-provider
           CI: false
 
-      # (Optional but recommended) Fix refresh on GitHub Pages for React Router:
-      # this makes /some/route refresh serve index.html
+      # React Router refresh support on GH Pages
       - name: SPA fallback (404 -> index.html)
         run: cp build/index.html build/404.html
 
@@ -54,6 +53,6 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Deploy to GitHub Pages
+      - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4
