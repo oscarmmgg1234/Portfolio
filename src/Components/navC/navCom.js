@@ -7,7 +7,7 @@ const Navs = ({toggle}) => {
     return (
             <div className={'navDiv'}>
                 <Navbar  expand={"md"} id={"navContainer"} >
-                    <div className={"navNameBrand"}>OscarLand</div>
+                    <div className={"navNameBrand"}>Digital Oscar</div>
                     <Nav className={"mr-auto"} >
                         <Nav.Link id={"NavItemName1"} href={"#home"} >
                             Home
@@ -22,12 +22,6 @@ const Navs = ({toggle}) => {
                             Contact
                         </Nav.Link>
                     </Nav>
-                    <Nav.Link id ={"NavItemName"} href={'#donate'}>
-                        Donate
-                    </Nav.Link>
-                    <Nav.Link id ={"NavItemName"} href={'admin'}>
-                        ADMIN<Link to={'/admin'}/>
-                    </Nav.Link>
                     <button className={"DrawerContainer"} onClick={toggle}>
                         <div className={"line"} />
                         <div className={"line"}/>

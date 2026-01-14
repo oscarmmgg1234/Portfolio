@@ -20,7 +20,8 @@ const ContactC = () => {
             <div className={'socialHandle'} >
                 <SocialIcon url={'https://github.com/oscarmmgg1234'} network={'github'} style={{marginRight: 20}}/>
                 <SocialIcon url={'https://www.instagram.com/oscarmmgg/'} network={'instagram'} style={{marginRight: 20}}/>
-                <SocialIcon url={'https://www.linkedin.com/in/oscar-maldonado-597761153/'} network={'linkedin'}/>
+                <SocialIcon url={'https://www.linkedin.com/in/oscar-maldonado-597761153/'} network={'linkedin'} style={{marginRight: 20}}/>
+                <SocialIcon url={'https://oscarmmgg1234.github.io/blog/'} network={'bandsintown'}/>
             </div>
             <form className="ui form" id={'form'}>
                 <div className="field">

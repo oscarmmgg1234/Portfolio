@@ -7,23 +7,11 @@ const NAVBAR = lazy(() => import("./screens/navbar"));
 const About = lazy(() => import("./screens/about"));
 const Portfolio = lazy(() => import("./screens/portfolio"));
 const Contact = lazy(() => import("./screens/contact"));
-const Admin = lazy(() => import("./screens/admin"));
-const Dashboard = lazy(() => import("./screens/Dashboard"));
 
 function App() {
   const [toggle, setToggle] = React.useState(false);
   const [signedIN, setSigned] = React.useState(false);
 
-  const fireConfig = {
-    apiKey: "AIzaSyCLVMM8vmHBNT--ldKCBZmmUi5IEv-Ed1o",
-    authDomain: "webportf-f8d66.firebaseapp.com",
-    databaseURL: "https://webportf-f8d66.firebaseio.com",
-    projectId: "webportf-f8d66",
-    storageBucket: "webportf-f8d66.firebasestorage.app",
-    messagingSenderId: "26027074277",
-    appId: "1:26027074277:web:448a6046ae80ce973aea0c",
-    measurementId: "G-LXZBXVH5S6",
-  };
 
   return (
     <>
@@ -36,12 +24,7 @@ function App() {
             }}
           >
             <Switch>
-              <Route path={"/admin"}>
-                <Admin onSigned={() => setSigned(true)} config={fireConfig} />
-              </Route>
-              <Route path={"/dashboard"}>
-                <Dashboard signedStatus={signedIN} config={fireConfig} />
-              </Route>
+              
               <Route path={"/"}>
                 <NAVBAR nav={"OscarLand"} onToggle={() => setToggle(!toggle)} />
                 <section id={"home"} className={"sections"}>
@@ -51,7 +34,6 @@ function App() {
                 <section id={"about"} className={"sections"}>
                   <About />
                 </section>
-
                 <section id={"port"} className={"sections"}>
                   <Portfolio />
                 </section>
