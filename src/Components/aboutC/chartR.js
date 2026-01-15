@@ -26,7 +26,7 @@ const ChartR = () => {
       "AI / ML (Learning)"
     ];
 
-    const values = [7, 7, 6, 6, 7, 5, 4];
+    const values = [9, 8, 7, 6, 7, 5, 4];
 
     chartRef.current = new Chart(ctx, {
       type: "radar",
