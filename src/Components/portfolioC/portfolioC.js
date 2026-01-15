@@ -1,42 +1,58 @@
 import React from "react";
 
 const PROJECTS = [
-  {
-    title: "Web Portfolio (Source)",
-    href: "https://github.com/oscarmmgg1234/CSEWebDevelopment",
-    desc: "Personal portfolio site built with React. UI components with Semantic UI + Bootstrap. Includes Firebase integration and Stripe experimentation.",
-    tags: ["React", "Firebase", "Semantic UI", "Bootstrap", "Stripe"],
-  },
-  {
-    title: "Data Structures / Algorithms",
-    href: "https://github.com/oscarmmgg1234/AdvanceDataStructures-C-",
-    desc: "Advanced data structures in C++ with algorithm analysis and optimization work.",
-    tags: ["C++", "Algorithms", "Data Structures"],
-  },
-  {
-    title: "Nutrigoals",
-    href: "https://github.com/oscarmmgg1234/NutriGoals-1",
-    desc: "Cross-platform calorie tracker (React Native). Backend with Node.js + MySQL and AWS services.",
-    tags: ["React Native", "Node.js", "MySQL", "AWS"],
-  },
-  {
-    title: "Barber App",
-    href: "https://github.com/oscarmmgg1234/BarberShop",
-    desc: "Appointment-style app prototype using React and Redux. Focused on state management patterns.",
-    tags: ["React", "Redux"],
-  },
-  {
-    title: "PathFinding (Qt / C++)",
-    href: "https://github.com/oscarmmgg1234/pathfidingGameInQT-Cplusplus",
-    desc: "Pathfinding visualizer/game using Qt C++. Implements Dijkstra, A*, and related search strategies.",
-    tags: ["C++", "Qt", "Algorithms", "A*", "Dijkstra"],
-  },
-  {
-    title: "Image API Database",
-    href: "https://github.com/oscarmmgg1234/PictureUploadCloudService",
-    desc: "Python Flask API for authenticated image upload/download. Built for web/mobile usage with basic security practices.",
-    tags: ["Python", "Flask", "API", "Auth"],
-  },
+ {
+  title: "Web Portfolio (Source)",
+  href: "https://github.com/oscarmmgg1234/Portfolio",
+  desc: "Personal portfolio site built with React using Semantic UI and Bootstrap components.",
+  tags: ["React", "Semantic UI", "Bootstrap"],
+},
+{
+  title: "Data Structures & Algorithms",
+  href: "https://github.com/oscarmmgg1234/AdvanceDataStructures-C-",
+  desc: "Advanced C++ data structures with algorithm analysis and optimization.",
+  tags: ["C++", "Algorithms", "Data Structures"],
+},
+{
+  title: "Nutrigoals",
+  href: "https://github.com/oscarmmgg1234/NutriGoals-1",
+  desc: "Cross-platform calorie tracking app built with React Native. Backend powered by Node.js, MySQL, and AWS.",
+  tags: ["React Native", "Node.js", "MySQL", "AWS"],
+},
+{
+  title: "ZUMA Inventory Platform (Contract Work)",
+  href: "https://github.com/oscarmmgg1234/ZUMA-SYSTEM",
+  desc: "Custom interpreter-style inventory management platform designed to fully match a growing company's operational needs.",
+  tags: ["React", "Node.js", "Express", "React Native", "Swift", "Python", "Bash", "WSL", "Sharp", "API"],
+},
+{
+  title: "File System Project",
+  href: "https://github.com/oscarmmgg1234/File-System-Project",
+  desc: "Custom disk-based file system implemented from scratch with a command-line shell.",
+  tags: ["C++", "File Systems"],
+},
+{
+  title: "Perf-Trace (NPM Package)",
+  href: "https://github.com/oscarmmgg1234/perf-trace",
+  desc: "Lightweight execution timer that injects into code to trace or flow execution, producing structured outputs for logging, streaming, or database export.",
+  tags: ["Node.js", "NPM", "Module", "API"],
+},
+{
+  title: "snotation",
+  href: "https://pypi.org/project/snotation/",
+  desc: "Library for scientific notation arithmetic, supporting chained operations, mixed inputs, and multiple output formats.",
+  tags: ["JavaScript", "Node.js", "Python", "NPM", "PyPI"],
+},
+{
+  title: "electro-learn",
+  href: "/",
+  desc: "Electromagnetism problem-solving library built on top of snotation, featuring a custom formula parser, solver, and preloaded symbolic equations.",
+  tags: ["JavaScript", "Node.js", "Python", "NPM", "PyPI"],
+},
+
+  
+
+
 ];
 
 // ---- your card styling (kept) ----
