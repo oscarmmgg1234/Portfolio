@@ -1,3 +1,4 @@
+// AboutC.jsx
 import React from "react";
 import ChartR from "./chartR";
 import standImg from "../../ASSETS/IMAGES/stand.jpg";
@@ -5,7 +6,8 @@ import standImg from "../../ASSETS/IMAGES/stand.jpg";
 const AboutC = () => {
   const styles = {
     page: {
-      height: "100vh",
+      // desktop stays the same; mobile uses minHeight + no scroll traps
+      minHeight: "100dvh",
       width: "100%",
       background: "#f2f3f700",
       display: "flex",
@@ -13,7 +15,7 @@ const AboutC = () => {
       alignItems: "stretch",
       padding: 24,
       boxSizing: "border-box",
-      overflow: "hidden",
+      overflow: "visible",
     },
 
     card: {
@@ -26,14 +28,14 @@ const AboutC = () => {
       border: "1px solid rgba(0,0,0,0.06)",
       display: "flex",
       overflow: "hidden",
-      marginTop: '4%'
+      marginTop: "4%",
     },
 
     // LEFT SIDE
     left: {
       flex: "1 1 62%",
       padding: 22,
-      overflowY: "auto",
+      overflowY: "auto", // keep desktop behavior
       boxSizing: "border-box",
     },
 
@@ -157,44 +159,92 @@ const AboutC = () => {
     },
 
     media: `
+      /* iPad + down: stack layout but keep desktop look otherwise */
       @media (max-width: 900px) {
         .aboutCard {
           flex-direction: column;
+          height: auto !important;
+          overflow: visible !important;
         }
+
+        .aboutLeft {
+          overflow: visible !important; /* avoid nested scroll on mobile Safari */
+        }
+
         .aboutDivider {
           width: auto;
           height: 1px;
           margin: 0 22px;
           background: linear-gradient(to right, transparent, rgba(0,0,0,0.15), transparent);
         }
+
         .aboutRight {
-          flex: 0 0 320px;
+          flex: 0 0 auto;
+        }
+      }
+
+      /* iPhone / small phones */
+      @media (max-width: 520px) {
+        .aboutPage {
+          padding: 12px !important;
+        }
+
+        .aboutCard {
+          border-radius: 16px !important;
+          margin-top: 0 !important;
+        }
+
+        /* make header row vertical on phones */
+        .aboutHeaderRow {
+          flex-direction: column !important;
+          gap: 12px !important;
+        }
+
+        .aboutImageWrap {
+          width: 100% !important;
+          max-width: 360px !important;
+          flex: 0 0 auto !important;
+        }
+
+        .aboutTitle {
+          font-size: 26px !important;
+        }
+
+        .aboutSubtitle {
+          font-size: 14px !important;
+          line-height: 1.6 !important;
+        }
+
+        .aboutRight {
+          padding: 14px !important;
         }
       }
     `,
   };
 
   return (
-    <div style={styles.page}>
+    <div className="aboutPage" style={styles.page}>
       <style>{styles.media}</style>
 
       <div className="aboutCard" style={styles.card}>
         {/* LEFT */}
-        <div style={styles.left}>
-          <div style={styles.headerRow}>
-            <div style={styles.imageWrap}>
+        <div className="aboutLeft" style={styles.left}>
+          <div className="aboutHeaderRow" style={styles.headerRow}>
+            <div className="aboutImageWrap" style={styles.imageWrap}>
               <img src={standImg} alt="Oscy" loading="lazy" style={styles.image} />
             </div>
 
             <div style={{ flex: 1, minWidth: 0 }}>
-              <h1 style={styles.title}>About</h1>
+              <h1 className="aboutTitle" style={styles.title}>
+                About
+              </h1>
 
-              <p style={styles.subtitle}>
+              <p className="aboutSubtitle" style={styles.subtitle}>
                 I’m a software engineer focused on building{" "}
                 <span style={styles.highlight}>reliable</span>,{" "}
                 <span style={styles.highlight}>scalable</span>, and{" "}
-                <span style={styles.highlight}>intentional</span> systems —
-                especially where complexity is real.
+                <span style={styles.highlight}>intentional</span> systems — especially
+                where complexity is real.
               </p>
 
               <div style={styles.chips}>
@@ -210,9 +260,9 @@ const AboutC = () => {
           <div style={styles.section}>
             <p style={styles.p}>
               My work lives at the intersection of{" "}
-              <span style={styles.highlight}>engineering and foundations</span>:
-              how systems behave, how information survives noise, and how software
-              stays correct as it grows.
+              <span style={styles.highlight}>engineering and foundations</span>: how
+              systems behave, how information survives noise, and how software stays
+              correct as it grows.
             </p>
 
             <div style={styles.callout}>
@@ -243,8 +293,8 @@ const AboutC = () => {
             </p>
 
             <div style={styles.footerNote}>
-              This page is intentionally concise — the blog is where deeper
-              thinking lives.
+              This page is intentionally concise — the blog is where deeper thinking
+              lives.
             </div>
           </div>
         </div>

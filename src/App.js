@@ -10,7 +10,6 @@ const Contact = lazy(() => import("./screens/contact"));
 
 function App() {
   const [toggle, setToggle] = React.useState(false);
-  const [signedIN, setSigned] = React.useState(false);
 
 
   return (

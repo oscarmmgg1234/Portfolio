@@ -1,3 +1,4 @@
+// chartR.jsx
 import React, { useEffect, useRef } from "react";
 import Chart from "chart.js";
 
@@ -14,8 +15,8 @@ const ChartR = () => {
       chartRef.current = null;
     }
 
-    // Grounded, entry-level snapshot (0–10)
-    // "Stronger in fundamentals + shipping, growing into AI"
+    const isSmall = window.matchMedia("(max-width: 520px)").matches;
+
     const labels = [
       "Backend Fundamentals",
       "APIs & Integration",
@@ -23,7 +24,7 @@ const ChartR = () => {
       "React / UI",
       "Testing / Debugging",
       "DevOps Basics",
-      "AI / ML (Learning)"
+      "AI / ML (Learning)",
     ];
 
     const values = [9, 8, 7, 6, 7, 5, 4];
@@ -37,38 +38,41 @@ const ChartR = () => {
             label: "Skill Snapshot",
             data: values,
             borderWidth: 2,
-            pointRadius: 2
-          }
-        ]
+            pointRadius: isSmall ? 1 : 2,
+          },
+        ],
       },
       options: {
         responsive: true,
         maintainAspectRatio: false,
         legend: { display: false },
-        layout: { padding: 12 },
+
+        layout: { padding: isSmall ? 6 : 12 },
 
         scale: {
           ticks: {
             beginAtZero: true,
             min: 0,
             max: 10,
-            stepSize: 2
+            stepSize: 2,
+            fontSize: isSmall ? 10 : 12,
           },
           pointLabels: {
-            fontSize: 12
-          }
+            fontSize: isSmall ? 10 : 12,
+          },
         },
 
         tooltips: {
           callbacks: {
             title: (items, data) => data.labels[items[0].index],
             label: (tooltipItem, data) => {
-              const v = data.datasets[tooltipItem.datasetIndex].data[tooltipItem.index];
+              const v =
+                data.datasets[tooltipItem.datasetIndex].data[tooltipItem.index];
               return ` ${v}/10`;
-            }
-          }
-        }
-      }
+            },
+          },
+        },
+      },
     });
 
     return () => {
@@ -82,14 +86,14 @@ const ChartR = () => {
       width: "100%",
       display: "flex",
       flexDirection: "column",
-      gap: 12
+      gap: 12,
     },
 
     header: {
       display: "flex",
       justifyContent: "space-between",
       alignItems: "baseline",
-      gap: 10
+      gap: 10,
     },
 
     title: { margin: 0, fontSize: 16, fontWeight: 900, color: "#111" },
@@ -103,37 +107,73 @@ const ChartR = () => {
       border: "1px solid rgba(0,0,0,0.08)",
       background: "#fcfcfd",
       padding: 12,
-      boxSizing: "border-box"
+      boxSizing: "border-box",
     },
 
     caption: {
       fontSize: 13,
       lineHeight: 1.55,
-      opacity: 0.82
+      opacity: 0.82,
     },
 
     legend: {
       display: "grid",
       gap: 6,
       fontSize: 12.8,
-      opacity: 0.85
-    }
+      opacity: 0.85,
+    },
+
+    // CSS here so it works even if ChartR is used elsewhere
+    media: `
+      @media (max-width: 900px) {
+        .chartCanvasBox {
+          min-height: 260px;
+        }
+      }
+
+      @media (max-width: 520px) {
+        .chartWrap {
+          gap: 10px;
+        }
+
+        .chartCanvasBox {
+          min-height: 240px;
+          padding: 10px;
+          border-radius: 14px;
+        }
+
+        .chartTitle {
+          font-size: 15px !important;
+        }
+
+        .chartSub {
+          font-size: 12px !important;
+        }
+      }
+    `,
   };
 
   return (
-    <div style={styles.wrap}>
+    <div className="chartWrap" style={styles.wrap}>
+      <style>{styles.media}</style>
+
       <div style={styles.header}>
-        <h3 style={styles.title}>Skill Snapshot</h3>
-        <p style={styles.sub}>0–10 (honest + in-progress)</p>
+        <h3 className="chartTitle" style={styles.title}>
+          Skill Snapshot
+        </h3>
+        <p className="chartSub" style={styles.sub}>
+          0–10 (honest + in-progress)
+        </p>
       </div>
 
-      <div style={styles.canvasBox}>
+      <div className="chartCanvasBox" style={styles.canvasBox}>
         <canvas ref={canvasRef} />
       </div>
 
       <div style={styles.caption}>
-        A simple view of where I’m strongest today and what I’m actively improving. I’m confident
-        contributing in backend + web fundamentals, and I’m continuing to grow into DevOps and AI/ML.
+        A simple view of where I’m strongest today and what I’m actively improving.
+        I’m confident contributing in backend + web fundamentals, and I’m continuing
+        to grow into DevOps and AI/ML.
       </div>
 
       <div style={styles.legend}>

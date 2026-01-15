@@ -36,14 +36,6 @@ const SideB = ({toggles,visible}) => {
                     <Icon name='phone' />
                     Contact
                 </Menu.Item>
-                <Menu.Item as='a' href={"#donate"} onClick={toggles}>
-                    <Icon name='dollar sign icon' />
-                    Donate :)
-                </Menu.Item>
-                <Menu.Item as='a' href={"admin"} onClick={toggles}>
-                    <Icon name='id badge icon' />
-                    Admin<Link to={'/admin'}/>
-                </Menu.Item>
             </Sidebar>
     )//end of return
 }//end of component
