@@ -45,11 +45,16 @@ const PROJECTS = [
 },
 {
   title: "electro-learn",
-  href: "/",
+  href: "https://pypi.org/project/snotation/",
   desc: "Electromagnetism problem-solving library built on top of snotation, featuring a custom formula parser, solver, and preloaded symbolic equations.",
   tags: ["JavaScript", "Node.js", "Python", "NPM", "PyPI"],
 },
-
+{
+  title: "Covid FullStack Webapp (CSU: San bernardino) (title: Project Manager)",
+  href: "https://github.com/h1013238763/CovidApp",
+  desc: "A semester project app that track the user's life and provide suggestion to avoid the Covid",
+  tags: ["Python", "ML", "API", "Flask", "UI/UX"],
+},
   
 
 
